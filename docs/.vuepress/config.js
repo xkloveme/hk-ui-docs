@@ -3,7 +3,7 @@ const baseMap = {
   test: '/hk-ui-test/web/',
   prod: '/hk-ui/web/'
 }
-let component = ['hk-countup', 'table', 'hk-editor', 'hk-form', 'hk-search']
+let component = ['hk-button', 'hk-countup', 'table', 'hk-editor', 'hk-form', 'hk-search', 'hk-scroll-list']
 module.exports = {
   base: baseMap[process.env.ENV],
   title: 'Hk-ui',
@@ -31,6 +31,6 @@ module.exports = {
     // 使用更多的 markdown-it 插件!
     md.use(require('markdown-it-checkbox')).use(require('markdown-it-kbd'))
   },
-  plugins: ['@vuepress/back-to-top', '@vuepress/medium-zoom'],
+  plugins: ['@vuepress/back-to-top', '@vuepress/medium-zoom', 'demo-block'],
   serviceWorker: true
 }
